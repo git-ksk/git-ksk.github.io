@@ -15,7 +15,7 @@
 ---
 
 ### Download
-[![Download on the App Store](https://developer.apple.com/app-store/marketing-resources/badges-layout-guides/app-store-badge-lrg.png)](https://apps.apple.com/jp/app/%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D-%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E5%85%B1%E6%9C%89-%E7%AE%A1%E7%90%86/id6764752127)
+[![Download on the App Store](https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83)](https://apps.apple.com/jp/app/%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D-%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E5%85%B1%E6%9C%89-%E7%AE%A1%E7%90%86/id6764752127)
 
 ---
 
