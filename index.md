@@ -21,6 +21,7 @@
 
 ### Information
 *   [Privacy Policy](https://git-ksk.github.io/sorosoro-privacy/)
+*   [Support & Contact](mailto:k.lifetime.app+sorosoro-support@gmail.com)
 
 ---
 © 2026 git-ksk
