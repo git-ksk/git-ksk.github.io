@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>かるぴく / KaruPic — Support</title>
+  <meta name="description" content="Support information for かるぴく / KaruPic.">
+  <style>
+    :root{color-scheme:light dark;--bg:#f7f7f5;--card:#fff;--fg:#1f2328;--muted:#636c76;--line:#d8dee4;--link:#0969da}
+    @media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--muted:#8b949e;--line:#30363d;--link:#58a6ff}}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:860px;margin:0 auto;padding:48px 20px 72px} article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+    h1{font-size:2rem;line-height:1.25;margin:0 0 8px} h2{font-size:1.25rem;margin:2rem 0 .5rem} p,li{max-width:72ch}
+    .muted{color:var(--muted)} a{color:var(--link)} .button{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+    hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0} nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+  </style>
+</head>
+<body>
+<main>
+<article>
+  <h1>かるぴく / KaruPic サポート</h1>
+  <p class="muted">画像を指定容量以下に圧縮する、端末内処理のシンプルなユーティリティです。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合や使い方については、下記メールアドレスまでお問い合わせください。</p>
+  <p><a class="button" href="mailto:k.lifetime.app+karupic-support@gmail.com?subject=KaruPic%20Support">メールで問い合わせる</a></p>
+  <p><a href="mailto:k.lifetime.app+karupic-support@gmail.com">k.lifetime.app+karupic-support@gmail.com</a></p>
+
+  <h2>お問い合わせ時にあると助かる情報</h2>
+  <ul>
+    <li>かるぴくのバージョン / ビルド番号</li>
+    <li>iOS / iPadOSのバージョン</li>
+    <li>端末モデル</li>
+    <li>利用言語</li>
+    <li>再現手順と、表示されたエラーメッセージ</li>
+  </ul>
+  <p>画像そのもの、元ファイル名、ファイルパス、EXIF / GPS情報は、必要がない限り送らないでください。本アプリがこれらを問い合わせメールへ自動添付することはありません。</p>
+
+  <h2>よくある確認事項</h2>
+  <ul>
+    <li><strong>元の写真は消えますか？</strong> — いいえ。かるぴくは元写真を自動で削除・置換しません。</li>
+    <li><strong>写真はサーバーへ送られますか？</strong> — 圧縮処理は端末内で行い、開発者サーバーへ画像をアップロードしません。</li>
+    <li><strong>ストレージ整理アプリですか？</strong> — いいえ。指定容量以下の画像ファイルを作るためのアプリです。保存しただけでiPhone全体の空き容量を自動的に増やすものではありません。</li>
+    <li><strong>HDR写真はどうなりますか？</strong> — 新しく圧縮する画像は通常のSDR / sRGB JPEGとして出力します。元画像が指定容量以下で変更不要の場合は元データをそのまま扱います。</li>
+    <li><strong>オフラインで使えますか？</strong> — 端末内に利用可能な元画像がある場合、圧縮処理自体はオフラインで動作します。iCloud等から原画像を取得する必要がある場合は通信が必要になることがあります。</li>
+  </ul>
+
+  <hr>
+
+  <h1 lang="en">KaruPic Support</h1>
+  <p class="muted" lang="en">A simple on-device utility for compressing images to a selected file-size ceiling.</p>
+
+  <div lang="en">
+    <h2>Contact</h2>
+    <p>For help or bug reports, contact:</p>
+    <p><a class="button" href="mailto:k.lifetime.app+karupic-support@gmail.com?subject=KaruPic%20Support">Email support</a></p>
+    <p><a href="mailto:k.lifetime.app+karupic-support@gmail.com">k.lifetime.app+karupic-support@gmail.com</a></p>
+
+    <h2>Useful details to include</h2>
+    <ul>
+      <li>KaruPic version and build number</li>
+      <li>iOS / iPadOS version</li>
+      <li>Device model</li>
+      <li>App language</li>
+      <li>Steps to reproduce and any visible error message</li>
+    </ul>
+    <p>Please avoid sending the original image, source file name, file path, EXIF, or GPS information unless it is necessary. KaruPic does not automatically attach those items to support email.</p>
+
+    <h2>Common questions</h2>
+    <ul>
+      <li><strong>Does KaruPic delete the original photo?</strong> No. It does not automatically delete or replace the source.</li>
+      <li><strong>Are photos uploaded to a server?</strong> Compression is performed on the device; KaruPic does not upload images to a developer-operated server.</li>
+      <li><strong>Is it a storage-cleaner app?</strong> No. Its job is to create image files that fit a selected size ceiling.</li>
+      <li><strong>What happens to HDR photos?</strong> Newly compressed output is a conventional SDR / sRGB JPEG. Files that are already below the selected ceiling may be passed through unchanged.</li>
+      <li><strong>Does compression work offline?</strong> Compression itself works offline when the source image is already available on the device. Downloading an original from iCloud or another provider may require a network connection.</li>
+    </ul>
+  </div>
+
+  <nav>
+    <a href="/karupic/privacy/">プライバシーポリシー / Privacy Policy</a>
+    <a href="/">Developer site</a>
+  </nav>
+</article>
+</main>
+</body>
+</html>
