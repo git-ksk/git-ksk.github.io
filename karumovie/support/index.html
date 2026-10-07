@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>かるムビ / KaruMovie — Support</title>
+  <meta name="description" content="Support information for かるムビ / KaruMovie.">
+  <style>
+    :root{color-scheme:light dark;--bg:#f7f7f5;--card:#fff;--fg:#1f2328;--muted:#636c76;--line:#d8dee4;--link:#0969da}
+    @media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--muted:#8b949e;--line:#30363d;--link:#58a6ff}}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:860px;margin:0 auto;padding:48px 20px 72px} article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+    h1{font-size:2rem;line-height:1.25;margin:0 0 8px} h2{font-size:1.25rem;margin:2rem 0 .5rem} p,li{max-width:72ch}
+    .muted{color:var(--muted)} a{color:var(--link)} .button{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+    hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0} nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+  </style>
+</head>
+<body>
+<main>
+<article>
+  <h1>かるムビ / KaruMovie サポート</h1>
+  <p class="muted">動画を指定容量以下へ圧縮する、端末内処理のシンプルなユーティリティです。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合や使い方については、下記メールアドレスまでお問い合わせください。</p>
+  <p><a class="button" href="mailto:k.lifetime.app+karumovie-support@gmail.com?subject=KaruMovie%20Support">メールで問い合わせる</a></p>
+  <p><a href="mailto:k.lifetime.app+karumovie-support@gmail.com">k.lifetime.app+karumovie-support@gmail.com</a></p>
+
+  <h2>お問い合わせ時にあると助かる情報</h2>
+  <ul>
+    <li>かるムビのバージョン / ビルド番号</li>
+    <li>iOS / iPadOSのバージョン</li>
+    <li>端末モデル</li>
+    <li>入力動画のおおまかな種類（例: 4K/60fps、画面収録）</li>
+    <li>選んだ容量上限</li>
+    <li>再現手順と、表示されたエラーメッセージ</li>
+  </ul>
+  <p>元動画、ファイル名、ファイルパス、Photosの識別子、位置情報等は、必要がない限り送らないでください。本アプリがこれらや端末診断を問い合わせメールへ自動添付することはありません。</p>
+
+  <h2>よくある確認事項</h2>
+  <ul>
+    <li><strong>元の動画は消えますか？</strong> — いいえ。かるムビは元動画を自動で削除・置換しません。</li>
+    <li><strong>動画はサーバーへ送られますか？</strong> — 圧縮処理は端末内で行い、開発者サーバーへ動画をアップロードしません。</li>
+    <li><strong>すでに指定容量以下ならどうなりますか？</strong> — MP4 / H.264 / AACまたは無音声 / 対応SDRの条件を満たす場合は、再圧縮せず元ファイルをそのまま結果として扱います。</li>
+    <li><strong>HDR動画は圧縮できますか？</strong> — 初期リリースはSDR動画を対象としており、非対応のHDR / 広色域動画は圧縮前に明示的に拒否します。</li>
+    <li><strong>オフラインで使えますか？</strong> — 動画がすでに端末上で利用可能なら、圧縮処理自体はオフラインで動作します。iCloud等から元動画を取得する必要がある場合は通信が必要になることがあります。</li>
+  </ul>
+
+  <hr>
+
+  <h1 lang="en">KaruMovie Support</h1>
+  <p class="muted" lang="en">A simple on-device utility for compressing video to a selected file-size ceiling.</p>
+
+  <div lang="en">
+    <h2>Contact</h2>
+    <p>For help or bug reports, contact:</p>
+    <p><a class="button" href="mailto:k.lifetime.app+karumovie-support@gmail.com?subject=KaruMovie%20Support">Email support</a></p>
+    <p><a href="mailto:k.lifetime.app+karumovie-support@gmail.com">k.lifetime.app+karumovie-support@gmail.com</a></p>
+
+    <h2>Useful details to include</h2>
+    <ul>
+      <li>KaruMovie version and build number</li>
+      <li>iOS / iPadOS version</li>
+      <li>Device model</li>
+      <li>Approximate source type, such as 4K/60fps or screen recording</li>
+      <li>Selected size ceiling</li>
+      <li>Steps to reproduce and any visible error message</li>
+    </ul>
+    <p>Please avoid sending the original video, file name, file path, Photos identifier, or location metadata unless it is necessary. KaruMovie does not automatically attach those items or device diagnostics to support email.</p>
+
+    <h2>Common questions</h2>
+    <ul>
+      <li><strong>Does KaruMovie delete the original video?</strong> No. It does not automatically delete or replace the source.</li>
+      <li><strong>Is video uploaded to a server?</strong> Compression is performed on the device; KaruMovie does not upload video to a developer-operated server.</li>
+      <li><strong>What if the video is already below the target?</strong> A compatible MP4 / H.264 / AAC-or-silent / supported-SDR file is passed through unchanged.</li>
+      <li><strong>Does it compress HDR video?</strong> The initial release targets SDR video. Unsupported HDR or wide-color input is rejected before compression.</li>
+      <li><strong>Does compression work offline?</strong> Compression itself works offline when the source video is already available on the device. Downloading an original from iCloud or another provider may require network access.</li>
+    </ul>
+  </div>
+
+  <nav>
+    <a href="/karumovie/privacy/">プライバシーポリシー / Privacy Policy</a>
+    <a href="/">Developer site</a>
+  </nav>
+</article>
+</main>
+</body>
+</html>
