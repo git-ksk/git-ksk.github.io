@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>iPhoneの写真を500KB以下にする方法｜かるぴく</title>
+  <meta name="description" content="iPhoneの写真を500KB・1MBなどの指定容量以下にして、申請フォームやメールに添付する手順。買い切りの画像圧縮アプリ「かるぴく」の操作と注意点を紹介。">
+  <link rel="canonical" href="https://git-ksk.github.io/karupic/photo-under-500kb/">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="iPhoneの写真を500KB以下にする方法｜かるぴく">
+  <meta property="og:description" content="フォーム提出・メール添付で容量オーバーになった写真を、指定したファイルサイズ以下に圧縮する手順。">
+  <meta property="og:url" content="https://git-ksk.github.io/karupic/photo-under-500kb/">
+  <style>
+    :root{color-scheme:light dark;--bg:#f7f7f5;--card:#fff;--fg:#1f2328;--muted:#636c76;--line:#d8dee4;--link:#0969da}
+    @media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--muted:#8b949e;--line:#30363d;--link:#58a6ff}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:840px;margin:auto;padding:40px 18px 72px}article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,38px)}
+    h1{font-size:clamp(1.6rem,4vw,2rem);line-height:1.35;margin:.6rem 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .65rem}h3{font-size:1.08rem;margin:1.4rem 0 .35rem}
+    p,li{max-width:72ch}ol li{padding:0 0 .55rem}.muted,small{color:var(--muted)}a{color:var(--link)}a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+    .button{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--link);color:#fff;text-decoration:none;font-weight:700}
+    .example{border-left:4px solid var(--link);padding:12px 16px;background:color-mix(in srgb,var(--link) 6%,var(--card));border-radius:0 12px 12px 0}
+    nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
+  </style>
+</head>
+<body>
+<main>
+<article>
+  <p class="muted"><a href="/karupic/support/">かるぴく / KaruPic</a>　›　写真の容量を指定して圧縮</p>
+  <h1>iPhoneの写真を500KB以下にする方法</h1>
+  <p>申請フォームやメール添付で「画像は500KB以下」「写真は1MB以下」と指定されて、送信できなかったことはありませんか？ 大切なのは画像の縦横サイズではなく、<strong>保存するファイルの容量（KB・MB）</strong>を指定された上限以下にすることです。</p>
+  <p>iPhone/iPad向けの画像圧縮アプリ「かるぴく」なら、写真を選んで上限を指定し、圧縮後の容量を確認してからファイルを保存・共有できます。</p>
+
+  <h2>手順：500KB以下の写真を作る</h2>
+  <ol>
+    <li><strong>かるぴくを開いて写真を選択</strong>。写真ライブラリまたは「ファイル」アプリから選べます。</li>
+    <li><strong>目標容量を「500KB」に設定</strong>。提出先が「1MB以下」なら1MBを選択。20KB〜20MBの範囲で任意の容量も指定できます。</li>
+    <li><strong>「小さくする」を実行</strong>。1枚だけでも、最大50枚までまとめても、各画像に同じ容量上限を適用します。</li>
+    <li><strong>処理結果を確認</strong>。圧縮の成否と実際の出力容量が表示されます。1枚なら圧縮前後を見比べることもできます。</li>
+    <li><strong>保存または共有</strong>。保存した画像ファイルを、提出先のWebフォームやメール作成画面で選んで添付します。かるぴくがフォームへ自動送信するわけではありません。</li>
+  </ol>
+
+  <div class="example">
+    <strong>実測例：3.03MB → 484KB</strong>
+    <p>制作時に使用したサンプル写真を、500KB（500,000バイト）以下の設定で圧縮した例です。入力3,030,561バイト → 出力484,169バイトになりました。<strong>すべての画像で同じ削減率・見た目を保証するものではありません。</strong></p>
+  </div>
+
+  <h2>500KBと1MBを選ぶときの注意点</h2>
+  <ul>
+    <li><strong>500KBは500,000バイト</strong>として扱います。提出先が別の計算基準を使う場合は、余裕をもって少し小さめに設定してください。</li>
+    <li><strong>「何MB以下」を優先</strong>しながらできるだけ画質を残しますが、細部や解像度が変わることがあります。プレビューで必要な文字や写真の細部を確認してください。</li>
+    <li><strong>元の写真を勝手に消しません。</strong>保存した圧縮画像と元画像は別です。ストレージの空き容量を自動的に増やすアプリではありません。</li>
+    <li><strong>すでに上限以下のファイル</strong>は原則そのまま出力し、不要な再圧縮を行いません。形式やメタデータが元のまま残ることがあります。</li>
+    <li><strong>圧縮が必要な場合</strong>は主にJPEG（SDR）で出力します。写真の縦横のピクセル数指定、PNG透過の完全維持、証明写真のトリミング機能は提供していません。</li>
+  </ul>
+
+  <h2>かるぴくの購入・プライバシーについて</h2>
+  <p>日本のApp Storeでは200円の買い切りです（価格は変更される場合があるため、購入時にApp Storeで確認してください）。広告・サブスクリプション・追加課金・圧縮回数の制限はありません。写真の圧縮処理は端末内で完結し、開発者サーバーへ画像をアップロードしません。iCloudから元画像を読み込む際などは通信が必要なことがあります。</p>
+  <p><a class="button" href="https://apps.apple.com/jp/app/id6813254279" rel="noopener noreferrer">App Storeで「かるぴく」を見る</a></p>
+
+  <h2>よくある質問</h2>
+  <h3>圧縮すれば必ず500KB以下になりますか？</h3>
+  <p>達成した画像だけが成功結果として表示されます。指定容量に収まらない画像を、成功と偽って出力することはありません。結果画面で画像ごとの状態を確認してください。</p>
+  <h3>iPhoneの写真をメールにそのまま添付できますか？</h3>
+  <p>「共有」からメールアプリなどへ渡すか、保存した画像をメール側で添付できます。メールアプリや提出先サービスの送信条件はそれぞれ確認してください。</p>
+  <h3>無料ですか？</h3>
+  <p>日本のApp Storeでは買い切りの有料アプリです。アプリ購入後の広告やアプリ内課金はありません。</p>
+
+  <nav aria-label="関連ページ">
+    <a href="/karupic/support/">サポート・お問い合わせ</a>
+    <a href="/karupic/privacy/">プライバシーポリシー</a>
+    <a href="https://apps.apple.com/jp/app/id6813254279">App Store</a>
+  </nav>
+</article>
+</main>
+</body>
+</html>
