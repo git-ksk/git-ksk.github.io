@@ -19,7 +19,7 @@
 <main>
 <article>
   <h1>かるムビ / KaruMovie プライバシーポリシー</h1>
-  <p class="muted">最終更新日: 2026年10月7日 / Last updated: October 7, 2026</p>
+  <p class="muted">最終更新日: 2026年11月14日 / Last updated: November 14, 2026</p>
 
   <h2>1. 基本方針</h2>
   <p>かるムビ（KaruMovie、以下「本アプリ」）は、動画をユーザーが選んだファイル容量以下へ圧縮するためのiPhone / iPad向けユーティリティです。動画処理は端末内で行われ、開発者が運営するサーバーへ動画をアップロードしません。</p>
@@ -36,14 +36,15 @@
 
   <h2>3. 動画と一時ファイルの扱い</h2>
   <p>圧縮処理は端末内で実行します。処理、保存、共有のために端末内の一時領域へ入力・結果・共有用ファイルを作成する場合があります。アプリが管理する一時ファイルは不要になった時点で削除し、前回起動時に残ったアプリ管理下の一時データも次回起動時に整理します。元の動画や元ファイルを本アプリが自動で削除・置換することはありません。</p>
-  <p>新しく圧縮した動画では、任意の元メタデータを出力へコピーしません。再生方向の維持に必要な変換情報など、動画表示に必要な情報は出力へ反映します。すでに指定容量以下で、MP4 / H.264 / AACまたは無音声 / 対応SDRという条件を満たす動画は再圧縮せず元ファイルをそのまま結果として扱うため、その場合は元ファイル内のメタデータも保持されます。</p>
+  <p>指定容量以下の再生可能な動画は、MOV・HEVC・HDRを含めて再圧縮せず元のファイルをそのまま結果として扱うため、元動画に含まれるメタデータも保持されます。指定容量を超える動画を圧縮する際は、対応する映像・音声・時間付きメタデータやQuickTimeのファイル全体のメタデータを可能な範囲で引き継ぎ、出力後に重要な情報の保持を検証します。必要に応じてMOV形式で出力します。字幕・タイムコード・チャプター・複数映像トラックなど、保持が保証できない構造を検出した場合や、出力のメタデータが検証に失敗した場合は、情報を黙って削除せず圧縮を中止します。</p>
+  <p>共有する動画には元の撮影場所などのメタデータが残る場合があります。共有先や保存先を選ぶ前に、必要に応じて動画の内容と付随する情報を確認してください。本アプリがこれらの情報を開発者のサーバーへ自動送信することはありません。</p>
 
   <h2>4. Photos / Files / Share Sheet</h2>
   <p>ユーザーが選択した動画を読み込むために、iOS / iPadOSのPhotos PickerおよびFilesを利用します。写真ライブラリへの動画保存は、ユーザーが明示的に保存操作を行った場合にのみ実行します。</p>
   <p>ユーザーがShare Sheetから他のアプリやクラウドサービスを選択した場合、その時点からは選択された送信先のプライバシーポリシーが適用されます。本アプリがユーザーの操作なしに結果動画を外部サービスへ送信することはありません。</p>
 
   <h2>5. HDR / 広色域動画</h2>
-  <p>初期リリースではSDR動画を対象としています。PQ、HLG、P3広色域、mastering-display metadataを含む非対応動画は圧縮前に明示的に拒否し、対応していない形式を黙って色変換することはありません。</p>
+  <p>対応するHLGおよびDolby Vision Profile 8.4動画は、HDR特性と必要なメタデータを検証しながらHEVC/MOVで圧縮できます。ただし、すべてのHDR形式・撮影端末・メタデータの組み合わせに対応するものではありません。PQなどの非対応形式や、Dolby Visionの構成情報が不足した動画は、SDRへ黙って変換せず圧縮を拒否します。指定容量以下の動画は再圧縮せず、そのまま共有できます。</p>
 
   <h2>6. 診断情報</h2>
   <p>本アプリはOS標準のログ機能を使用して、処理種別、ファイル容量、選択上限、成功/失敗種別、安定したエラーコード等の非センシティブな情報を端末内に記録する場合があります。動画、ファイル名、完全なパス/URL、Photos asset identifier、位置情報等の動画メタデータを診断ログへ記録しません。</p>
@@ -62,7 +63,7 @@
   <hr>
 
   <h1 lang="en">KaruMovie Privacy Policy</h1>
-  <p class="muted" lang="en">Last updated: October 7, 2026</p>
+  <p class="muted" lang="en">Last updated: November 14, 2026</p>
 
   <div lang="en">
     <h2>1. Overview</h2>
@@ -80,14 +81,15 @@
 
     <h2>3. Video and temporary files</h2>
     <p>Compression runs locally on the device. KaruMovie may create temporary input, result, and share files in app-managed temporary storage while processing. These files are removed when no longer needed, and stale app-owned temporary sessions from a prior launch are cleaned on a later launch. KaruMovie does not automatically delete or replace the user's original video or file.</p>
-    <p>Newly encoded output does not copy arbitrary source metadata. Rendering-critical information such as orientation is preserved. If an input is already below the selected ceiling and satisfies the compatible MP4 / H.264 / AAC-or-silent / supported-SDR contract, it is passed through unchanged, so metadata already in that file remains unchanged.</p>
+    <p>Playable videos that are already within the selected size limit are returned without re-encoding, including MOV, HEVC and HDR files; their existing metadata is retained. When compression is necessary, KaruMovie preserves supported video, audio, timed metadata and movie-level QuickTime metadata where possible, and verifies that essential information survived in the output. It uses a MOV container when required. If the source contains structures that cannot be safely preserved, such as certain subtitle, timecode or chapter tracks or multiple video tracks, or if output metadata verification fails, compression is rejected rather than silently discarding information.</p>
+    <p>Shared videos may retain original metadata, including filming location. Please check the video and any associated information before choosing a recipient or destination. KaruMovie does not automatically send this metadata to a developer-operated server.</p>
 
     <h2>4. Photos, Files, and Share Sheet</h2>
     <p>KaruMovie uses system features such as Photos Picker and Files to access video the user selects. Saving a result to the Photos library happens only after an explicit user action.</p>
     <p>If the user chooses another app or cloud service from the Share Sheet, that destination's privacy policy applies from that point. KaruMovie does not send result video to external services without the user's action.</p>
 
     <h2>5. HDR and wide-color video</h2>
-    <p>The initial release targets SDR video. Unsupported PQ, HLG, P3 wide-color, or mastering-display metadata is rejected before transcoding rather than silently color-converted.</p>
+    <p>Supported HLG and Dolby Vision Profile 8.4 videos can be compressed as HEVC/MOV while checking HDR properties and required metadata. Not all HDR formats, capture devices or metadata configurations are supported. Unsupported formats such as certain PQ sources, or Dolby Vision files lacking required configuration data, are rejected rather than silently converted to SDR. Videos already within the size limit can be shared without re-encoding.</p>
 
     <h2>6. Diagnostics</h2>
     <p>KaruMovie may use the operating system's logging facilities to record non-sensitive operational information such as processing stage, byte counts, selected target, result type, and stable error codes. It does not log the video, file names, full paths or URLs, Photos asset identifiers, or location/video metadata.</p>
